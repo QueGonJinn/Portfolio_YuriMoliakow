@@ -1,0 +1,49 @@
+.skills {
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        padding: 60px 10px 0 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        column-gap: 13px;
+        row-gap: 10px;
+    }
+    &__bloks {
+        border: 1px solid #000;
+        &-img {
+            padding: 30px 0 20px 30px;
+            &-large {
+                padding: 45px 0 32px 30px;
+            }
+            &-mongo {
+                padding: 38px 0 30px 30px;
+            }          
+        }
+        
+        &-title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            padding: 0 0 15px 30px;
+        }
+        &-descr {
+            padding: 0 30px 25px 30px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+
+        } 
+    }
+}
